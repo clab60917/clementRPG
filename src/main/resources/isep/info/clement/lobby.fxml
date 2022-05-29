@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="isep.info.clement.LobbyController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="601.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/bg.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="startGame" layoutX="250.0" layoutY="310.0" mnemonicParsing="false" onAction="#StartGame" text="Start Game">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Label layoutX="197.0" layoutY="42.0" text="Choose your class" textFill="WHITE">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="radioMage" layoutX="312.0" layoutY="183.0" mnemonicParsing="false" onAction="#GetRole" text="Mage" textFill="WHITE">
+         <toggleGroup>
+            <ToggleGroup fx:id="radioGroup" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="radioWarrior" layoutX="232.0" layoutY="183.0" mnemonicParsing="false" onAction="#GetRole" text="Warrior" textFill="WHITE" toggleGroup="$radioGroup" />
+      <RadioButton fx:id="radioHunter" layoutX="147.0" layoutY="183.0" mnemonicParsing="false" onAction="#GetRole" selected="true" text="Hunter" textFill="WHITE" toggleGroup="$radioGroup" />
+      <RadioButton fx:id="radioHealer" layoutX="383.0" layoutY="183.0" mnemonicParsing="false" onAction="#GetRole" text="Healer" textFill="WHITE" toggleGroup="$radioGroup" />
+   </children>
+</AnchorPane>
