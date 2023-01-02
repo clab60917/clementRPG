@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="isep.info.clement.GameController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="614.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/game-bg.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="fightButton" layoutX="131.0" layoutY="250.0" mnemonicParsing="false" onAction="#Fight" text="Fight">
+         <font>
+            <Font name="Californian FB Italic" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="consumableButton" layoutX="232.0" layoutY="250.0" mnemonicParsing="false" onAction="#Consumable" text="Consumable">
+         <font>
+            <Font name="Californian FB Italic" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="defendButton" layoutX="401.0" layoutY="250.0" mnemonicParsing="false" onAction="#Defend" text="Defend">
+         <font>
+            <Font name="Californian FB Italic" size="20.0" />
+         </font>
+      </Button>
+      <Label fx:id="storyLabel" alignment="CENTER" layoutX="67.0" layoutY="94.0" prefHeight="40.0" prefWidth="469.0" text="Your best fight!" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <Separator layoutX="57.0" layoutY="226.0" prefHeight="6.0" prefWidth="488.0" />
+      <Label alignment="CENTER" layoutX="117.0" layoutY="163.0" text="Your health" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="heroHealth" alignment="CENTER" layoutX="121.0" layoutY="196.0" prefHeight="17.0" prefWidth="124.0" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="enemyHealth" alignment="CENTER" layoutX="384.0" layoutY="194.0" prefHeight="17.0" prefWidth="91.0" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="383.0" layoutY="163.0" text="Enemy's health" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
